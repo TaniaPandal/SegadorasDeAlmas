@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+	padding: 0;
+    display: grid;
+    background-color: beige;
+    border: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    
+}
+
+
+
+
+@media (min-width: 500px) { ... }

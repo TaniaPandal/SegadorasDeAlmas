@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg,purple,rgb(163, 32, 167),rgb(67, 6, 76),black);
+    background-size: 400% 400%;
+    position: relative;
+    animation: degradado 10s ease infinite;
+}
+
+@keyframes degradado {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+    
+}
+
+
+<div>
+<h1>Wheel of doom</h1>
+</div>
+<div>
+<form>Espacio para formulario</form>
+</div>
+<div>
+<p>Espacio para rueca</p>
+</div>

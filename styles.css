@@ -1,22 +1,70 @@
-body {
+*{
     margin: 0;
-	padding: 0;
-    display: grid;
-    background-color: beige;
-    border: 5px;
-    align-items: center;
-    text-align: center;
+    padding: 0;
 }
 
-h1{
-    text-align: center;
+section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-image: url(./Subtract.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  
 }
 
-form{
+.intersect{
     
+    height: 100vh;
+    padding: 535px;
+    background-image: url(./Intersect.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    position:absolute;
+    z-index: -1;
+    -webkit-animation: rotate-center 30s linear infinite both;
+	 animation: rotate-center 30s linear infinite both;
+}
+
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+
+.segadoras{
+
+  z-index: 1;
+  position: absolute;
 }
 
 
 
 
-@media (min-width: 500px) { ... }
+
+
+
+
+
+

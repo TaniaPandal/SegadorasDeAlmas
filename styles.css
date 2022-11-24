@@ -248,22 +248,7 @@ section{
     background-size: cover;
     position: relative;
     overflow: hidden;
-/*copia.css*/
-    background: linear-gradient(45deg,purple,rgb(163, 32, 167),rgb(67, 6, 76),black);
-    background-size: 400% 400%;
-    position: relative;
-    animation: degradado 10s ease infinite;
-  
 }
-
-@keyframes degradado {
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
-    
-}
-
-/*se acaba la copia.css*/
 
 .intersect{
     
@@ -301,11 +286,9 @@ section{
     }
   }
 
-
-.segadoras{
-
-  z-index: 1;
-  position: absolute;
+.input{
+    margin-left: 150vh;
+    margin-bottom: 50vh;
 }
 
 

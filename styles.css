@@ -4,15 +4,16 @@
     padding: 0;
     outline: none;
 }
-body{
+.rueca{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    overflow: hidden;
     background: url(./asset/rueda-modified\ \(2\).png) no-repeat;
     background-size: 100vh no-repeat;
     background-position: center;
+    padding: 0vh;
+    z-index: 2;
+  
 }
 .mainbox {
     position: relative;
@@ -246,8 +247,9 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+    z-index: -1;
 }
 
 .intersect{
@@ -288,7 +290,7 @@ section{
 
 .input{
     margin-left: 150vh;
-    margin-bottom: 50vh;
+    padding: 0vh;
 }
 
 

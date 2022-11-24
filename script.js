@@ -1,3 +1,4 @@
+//ruleta
 function shuffle(array){
     var currentIndex = array.length,
     randomIndex;
@@ -64,6 +65,8 @@ function shuffle(array){
             box.style.transform = "rotate(90deg)";
         },6000);
     }
+
+//lista nombres
 let nombres = []; /* Arreglo para uso global con los nombres a medida que se ingresan */
 
 function insertarNombre(EventTarget) {
@@ -76,6 +79,9 @@ function insertarNombre(EventTarget) {
     const lista = document.getElementById("lista-nombres");
     lista.innerHTML += `<li> ${nombre}</li>`;
 
-    /*alert("Sacrificado " +nombre+ " añadido");*/
+    alert("Coder " +nombre+ " aguarda su sacrificio");
+
+
+    
 };
 

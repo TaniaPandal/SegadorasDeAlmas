@@ -4,6 +4,7 @@
     padding: 0;
     outline: none;
 }
+
 .rueca{
     display: flex;
     justify-content: center;
@@ -238,6 +239,14 @@ audio {
 }
 
 /*background*/
+
+.container-index-2{
+    background:url(./Imagen/rueda-astrologia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
 
 section{
     width: 100%;

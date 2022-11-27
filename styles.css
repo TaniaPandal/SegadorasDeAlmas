@@ -204,9 +204,38 @@ audio {
 
 /* lista nombres */
 
-.lista {
+
+.entrada{
     position: relative;
-    align-content: center;
+    color:#8f1ff7;
+}
+
+.nombreLi{
+    color: #fff;
+}
+
+.addBtn{
+    color: black;
+    background-color: azure;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 3vh;
+    color: hsl(317 100% 54%);
+    text-align: center;
+    border-color: #2d0057;
+}
+h2{
+    color: #fff; 
+    padding-top: 10vh;
+}
+
+.clearBtn{
+    color: hsl(317 100% 54%);
+    border-radius: 15vh;
+    width: 15vh;
+    height: 5vh;
+    border-color: #2d0057;
+
 }
 
 #inputField {

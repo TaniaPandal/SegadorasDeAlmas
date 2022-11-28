@@ -67,9 +67,9 @@ function shuffle(array){
     }
 
 //lista nombres
-let nombres = []; /* Arreglo para uso global con los nombres a medida que se ingresan */
+//let nombres = []; /* Arreglo para uso global con los nombres a medida que se ingresan */
 
-function insertarNombre(EventTarget) {
+/*function insertarNombre(EventTarget) {
 
     EventTarget.preventDefault();
 
@@ -79,9 +79,102 @@ function insertarNombre(EventTarget) {
     const lista = document.getElementById("lista-nombres");
     lista.innerHTML += `<li> ${nombre}</li>`;
 
-    alert("Coder " +nombre+ " aguarda su sacrificio");
+    alert("Coder " +nombre+ " aguarda su sacrificio");  
+};*/
+
+let coders = arregloCoders(); // arreglo donde se hara la copia del contenido de la lista <ul li por id 'nombres'>
+
+// x para eliminar con evento onclick cada elemento
+let myNodelist = document.getElementsByTagName("LI");
+let i;
+for (i = 0; i < myNodelist.length; i++) {
+    let span = document.createElement("SPAN");
+    let txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.id = "quitar"
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+}
+
+// recarga la pagina para limpiar todo
+function limpiar() {
+
+    document.location.reload();
+}
+
+// elimiar de la lista y el arreglo elemto al hacer click a la x
+let close = document.getElementsByClassName("close");
+
+for (let i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+        let div = this.parentElement;
+        document.getElementById("listado").removeChild(div);
+        coders = arregloCoders();
+    }
+
+}
+
+// hace copia de la lista ul li por id al arreglo coders
+function arregloCoders() {
+    let lista = [...document.querySelectorAll(`li`)]
+        .map(element => element.id);
+    return (lista);
+}
+
+//Verifica que no hayan nombres repetidos en el listado
+function verificarNombre(nombre) {
+
+    if (coders.find(item => item === nombre)) {
+        alert("No debe repetir un nombre");
+    } else {
+        return false;
+    }
+}
+
+//Estandariza nombre de forma que primera letra mayuscula y las demas minusculas siempre
+function capitalizacionNombre(nombre) {
+    nombre = nombre.charAt(0).toUpperCase() + nombre.slice(1).toLowerCase();
+    return nombre;
+}
+
+// Crea un elemento nuevo a partir del boton agregar cumple llamadas a las demas funciones para adecuar lo visual con lo logico 
+// asi mismo valida no reciba por entrada valores en blanco 
+// tambien al final crea el apartado con evento para quitar elementos de la lista
+function nuevoCoder() {
+
+    let li = document.createElement("li");
+    let nombre = document.getElementById("entrada").value;
+    nombre = capitalizacionNombre(nombre);
+    let t = document.createTextNode(nombre);
+    li.appendChild(t);
+    if (nombre === '') {
+        alert("Debe agregar un nombre");
+    } else {
+        if (verificarNombre(nombre) == false) {
+            li.setAttribute("id", nombre);
+            li.setAttribute("class", "nombreLi");
+            document.getElementById("listado").appendChild(li);
+            coders = arregloCoders();
+        }
+    }
+    document.getElementById("entrada").value = "";
+
+    let span = document.createElement("SPAN");
+    let txt = document.createTextNode("\u00D7"); // 
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+
+            let div = this.parentElement;
+            document.getElementById("listado").removeChild(div);
+            coders = arregloCoders();
+
+        }
+    }
+} 
 
 
-    
-};
 

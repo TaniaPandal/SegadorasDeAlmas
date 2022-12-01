@@ -53,7 +53,7 @@ function shuffle(array){
             title: '¡Ha llegado tu hora!',
             text: 'Al menos has vivido una vida larga...',
             imageUrl: 'imagen/parcas-2.webp',
-            imageWidth: 200,
+            imageWidth: 300,
             imageHeight: 200,
             imageAlt: 'Custom image',
           })
@@ -178,20 +178,14 @@ function nuevoCoder() {
 
 //funcion sacrificio
 function sacrificio() {
-    let death = Math.floor(Math.random() * coders.length);
-    const coderDeath = document.getElementById(coders[death]);
-    let msj = `El coder ${coders[death]} ha sido sacrificado`;
-    coderDeath.remove();
-    coders = arregloCoders();
-    return swal({
-        title: msj,
-        icon: "",
-        timer: 3000
-    
-        
-    });
+  let death = Math.floor(Math.random() * coders.length);
+  const coderDeath = document.getElementById(coders[death]);
+  let msj = `El coder ${coders[death]} ha sido sacrificado`;
+  coderDeath.remove();
+  coders = arregloCoders();
+  alert(msj);
+  event.preventDefault();
 }
-
 
 
 

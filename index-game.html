@@ -10,23 +10,25 @@
     <title>Wheel of doom</title>
 </head>
 <body>
-    <section class="d-flex flex-column justify-content-center align-items-center">
-        <div class="intersect d-flex "></div>
+    
+    <div class="d-flex justify-content-around  back">
         <div id="agregar" class="header">
             <h2>Lista de Coders</h2><br>
             <input class="entrada" type="text" id="entrada" placeholder="Agregar Coders...">
-            <span><button onclick="nuevoCoder()" class="addBtn">Agregar</button></span>
+            <span class="agregar"><button onclick="nuevoCoder()" class="addBtn">Agregar</button></span>
+            <div class="button">
+                <a href="./index-game.html" onclick="sacrificio()" class="neon-button" id="start-game-neon-button">Start game</a>
+                <ul id="listado">
+
+                </ul>
+        
+                <button onclick="limpiar()" class="clearBtn">Reiniciar</button>
+              </div>
         </div>
 
-        <ul id="listado">
+  
 
-        </ul>
-
-        <button onclick="limpiar()" class="clearBtn">Reiniciar</button>
-
-        <div class="button">
-            <a href="./index-game.html" onclick="sacrificio()" class="neon-button" id="start-game-neon-button">Start game</a>
-          </div>
+       
 
 
     <div class="rueca">
@@ -56,7 +58,7 @@
     
     </div>
 </div>
-</section>
+</div>
         
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>

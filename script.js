@@ -47,7 +47,7 @@ function shuffle(array){
         setTimeout(function(){
             element.classlist.add("animate");
         },5000);
-        setTimeout(function(){
+       /* setTimeout(function(){
             noblesacrifice.play();
             Swal.fire({
             title: '¡Ha llegado tu hora!',
@@ -57,7 +57,7 @@ function shuffle(array){
             imageHeight: 200,
             imageAlt: 'Custom image',
           })
-            },5500)
+            },5500)*/
 
     
         setTimeout(function(){
@@ -66,21 +66,7 @@ function shuffle(array){
         },6000);
     }
 
-//lista nombres
-//let nombres = []; /* Arreglo para uso global con los nombres a medida que se ingresan */
 
-/*function insertarNombre(EventTarget) {
-
-    EventTarget.preventDefault();
-
-    let nombre = document.getElementById("nombre").value;
-    nombres.push(nombre); 
-   
-    const lista = document.getElementById("lista-nombres");
-    lista.innerHTML += `<li> ${nombre}</li>`;
-
-    alert("Coder " +nombre+ " aguarda su sacrificio");  
-};*/
 
 let coders = arregloCoders(); // arreglo donde se hara la copia del contenido de la lista <ul li por id 'nombres'>
 
@@ -183,6 +169,7 @@ function sacrificio() {
   let msj = `El coder ${coders[death]} ha sido sacrificado`;
   coderDeath.remove();
   coders = arregloCoders();
+  noblesacrifice.play();
   Swal.fire({
     text: msj,
     imageUrl: './Imagen/parcas-2.webp'

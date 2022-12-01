@@ -185,7 +185,9 @@ function sacrificio() {
   coders = arregloCoders();
   alert(msj);
   event.preventDefault();
+ 
 }
+  
 
 
 

@@ -429,7 +429,11 @@ section{
     width: 5vw;
     height: auto;
     position: absolute;
-    margin-left: 60px;
-    top: 190px;
+    margin-left: 70px;
+    top: 270px;
+}
+ .close{
+    width: min-content;
+    height: min-content;
 }
 

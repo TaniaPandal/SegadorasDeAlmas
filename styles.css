@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     background: url(./asset/rueda-modified\ \(2\).png) no-repeat;
-    background-size: 100vh no-repeat;
+    background-size: 50vh no-repeat;
     background-position: center;
     padding: 0vh;
     z-index: 2;
@@ -97,42 +97,42 @@ span {
     font-size: 18px;
     font-family: sans-serif;
 }
-.box1 .span1 h5{
+.box1 .span1 p{
     position: absolute;
     top: 40%;
     right: 63%;
     transform: rotate(200deg);
     text-align: center;
 }
-.box1 .span2 h5{
+.box1 .span2 p{
     position: absolute;
     top: 30%;
     right: 57%;
     transform: rotate(-130deg);
     text-align: center;
 }
-.box1 .span3 h5{
+.box1 .span3 p{
     position: absolute;
     top: 22%;
     right: 38%;
     transform: rotate(-90deg);
     text-align: center;
 }
-.box1 .span4 h5{
+.box1 .span4 p{
     position: absolute;
     top: 25%;
     right: 16%;
     transform: rotate(-45deg);
     text-align: center;
 }
-.box1 .span5 h5{
+.box1 .span5 p{
     position: absolute;
     top: 40%;
     right: 6%;
     transform: rotate(-15deg);
     text-align: center;
 }
-.box2 .span1 .span1 h5{
+.box2 .span1 p{
     font-size: 50px;
     position: absolute;
     top: 34%;
@@ -140,28 +140,28 @@ span {
     transform: rotate(200deg);
     text-align: center;
 }
-.box2 .span2 h5{
+.box2 .span2 p{
     position: absolute;
     top: 28%;
     right: 54%;
     transform: rotate(-130deg);
     text-align: center;
 }
-.box2 .span3 h5{
+.box2 .span3 p{
     position: absolute;
     top: 15%;
     right: 40%;
     transform: rotate(270deg);
     text-align: center;
 }
-.box2.span4 h5{
+.box2.span4 p{
     position: absolute;
     top: 25%;
     right: 15%;
     transform: rotate(310deg);
     text-align: center;
 }
-.box2 .span5 h5{
+.box2 .span5 p{
     position: absolute;
     top: 38%;
     right: 6%;
@@ -299,7 +299,7 @@ section{
     height: 100vh;
     padding: 535px;
     background-image: url(Imagen/Intersect.png);
-    background-position: center;
+    background-position: center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;

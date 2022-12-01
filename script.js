@@ -183,7 +183,11 @@ function sacrificio() {
   let msj = `El coder ${coders[death]} ha sido sacrificado`;
   coderDeath.remove();
   coders = arregloCoders();
-  alert(msj);
+  Swal.fire({
+    text: msj,
+    imageUrl: './Imagen/parcas-2.webp'
+    
+  })
   event.preventDefault();
  
 }

@@ -10,38 +10,65 @@
     <title>Wheel of doom</title>
 </head>
 <body>
-    <div class="container-index-2">
+    
+    <div class="d-flex justify-content-around back">
+        <div id="agregar" class="header d-flex flex-column">
+          <div class="d-flex flex-column text-center">
+            <h2>Lista de Coders</h2><br>
+            <div>
+              <input class="entrada " type="text" id="entrada" placeholder="Agregar Coders...">
+               <ul id="listado">
+              </ul>
+              <div>
+              <div class="agregar addBtn neon-button" onclick="nuevoCoder()" class=>Agregar</div>
+              <div onclick="limpiar()" class="clearBtn neon-button">Reiniciar</div>
+            </div>
+             
+              </div>
+        </div>
+            <div class="d-flex justify-content-center">
+                <div onclick="sacrificio()" class=" neon-button" id="start-game-neon-button">Start game</div>
+                
+             </div>
+           
+        </div>
 
-    <!--Ruleta-->
+  
+
+       
+
+
     <div class="rueca">
         <div class="mainbox" id="mainbox">
             <div class="box" id="box">
                 <div class="box1">
-                    <span class="font span1"><h5></h5></span>
-                    <span class="font span2"><h5></h5></span>
-                    <span class="font span3"><h5></h5></span>
-                    <span class="font span4"><h5></h5></span>
-                    <span class="font span5"><h5></h5></span>
+                    <span class="font span1"><p>Manzana</p></span>
+                    <span class="font span2"><p>Rueca</p></span>
+                    <span class="font span3"><p>Lobos</p></span>
+                    <span class="font span4"><p>Aplastado</p></span>
+                    <span class="font span5"><p>Asesinado</p></span>
                 </div>
                 <div class="box2">
-                    <span class="font span1"><h5></h5></span>
-                    <span class="font span2"><h5></h5></span>
-                    <span class="font span3"><h5></h5></span>
-                    <span class="font span4"><h5></h5></span>
-                    <span class="font span5"><h5></h5></span>
+                    <span class="font span1"><p>Canibalizado</p></span>
+                    <span class="font span2"><p>Tranvía</p></span>
+                    <span class="font span3"><p>Tifus</p></span>
+                    <span class="font span4"><p>Macrobacteria</p></span>
+                    <span class="font span5"><p>Espuma de mar</p></span>
                 </div>
                 <button class="spin" Onclick="spin()">SPIN</button>
             </div>
         </div>
+        <Img class="arrow" src="asset/leftlocationarrow-modified.png">
         <Img class="carreteimg" src="asset/carreteHilo.png">
         <audio controls="controls" id="Wheel"  src="asset/wheel.mp3"  type="audion/mp3" ></audio>
         <audio controls="controls" id="noblesacrifice" src="asset/noblesacrifice.mp3"  type="audion/mp3" ></audio>
     
     </div>
 </div>
+</div>
         
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 <script src="/script.js"></script>
 </body>

@@ -47,6 +47,17 @@ function shuffle(array){
         setTimeout(function(){
             element.classlist.add("animate");
         },5000);
+        setTimeout(function(){
+            noblesacrifice.play();
+            Swal.fire({
+            title: '¡Ha llegado tu hora!',
+            text: 'Al menos has vivido una vida larga...',
+            imageUrl: 'imagen/parcas-2.webp',
+            imageWidth: 200,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          })
+            },5500)
 
     
         setTimeout(function(){
@@ -167,13 +178,18 @@ function nuevoCoder() {
 
 //funcion sacrificio
 function sacrificio() {
-  let death = Math.floor(Math.random() * coders.length);
-  const coderDeath = document.getElementById(coders[death]);
-  let msj = `El coder ${coders[death]} ha sido sacrificado`;
-  coderDeath.remove();
-  coders = arregloCoders();
-  alert(msj);
-  event.preventDefault();
+    let death = Math.floor(Math.random() * coders.length);
+    const coderDeath = document.getElementById(coders[death]);
+    let msj = `El coder ${coders[death]} ha sido sacrificado`;
+    coderDeath.remove();
+    coders = arregloCoders();
+    return swal({
+        title: msj,
+        icon: "",
+        timer: 3000
+    
+        
+    });
 }
 
 

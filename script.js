@@ -47,17 +47,6 @@ function shuffle(array){
         setTimeout(function(){
             element.classlist.add("animate");
         },5000);
-        setTimeout(function(){
-            noblesacrifice.play();
-            Swal.fire({
-            title: 'Sarificed!',
-            text: 'Murdered...!',
-            imageUrl: 'asset/Killed coder.png',
-            imageWidth: 200,
-            imageHeight: 200,
-            imageAlt: 'Custom image',
-          })
-            },5500)
 
     
         setTimeout(function(){

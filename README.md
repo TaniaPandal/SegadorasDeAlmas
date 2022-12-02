@@ -3,6 +3,13 @@
 Se trata de un sencillo juego donde los usuarios pueden sortear quién y cómo va a morir a manos de las hermanas del destino.
 
 La app consta de una página inicial, con un botón que nos lleva el juego. En la segunda página se observa un formulario donde introducimos los nombres de los jugadores que serán seleccionados por las hermanas para ser sacrificados. La ruleta nos indica el tipo de muerte que nos espera y se activa con el boton "Cut".
+  
+  Tecnologías utilizadas:
+  * HTML
+  * CSS
+  * JavaScript
+  * Bootstrap
+  * SweetAlert
 
 Para cualquier problema no dude en contactar con support.segadoras@muertesegura.com
 
